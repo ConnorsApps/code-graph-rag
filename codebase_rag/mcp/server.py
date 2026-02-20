@@ -71,6 +71,7 @@ def create_server() -> tuple[Server, MemgraphIngestor]:
         host=settings.MEMGRAPH_HOST,
         port=settings.MEMGRAPH_PORT,
         batch_size=settings.MEMGRAPH_BATCH_SIZE,
+        ssl=settings.MEMGRAPH_SSL,
     )
 
     cypher_generator = CypherGenerator()

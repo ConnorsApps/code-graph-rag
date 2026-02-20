@@ -752,6 +752,7 @@ def connect_memgraph(batch_size: int) -> MemgraphIngestor:
         host=settings.MEMGRAPH_HOST,
         port=settings.MEMGRAPH_PORT,
         batch_size=batch_size,
+        ssl=settings.MEMGRAPH_SSL,
     )
 
 

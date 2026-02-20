@@ -138,6 +138,7 @@ class AppConfig(BaseSettings):
 
     MEMGRAPH_HOST: str = "localhost"
     MEMGRAPH_PORT: int = 7687
+    MEMGRAPH_SSL: bool = False
     MEMGRAPH_HTTP_PORT: int = 7444
     LAB_PORT: int = 3000
     MEMGRAPH_BATCH_SIZE: int = 1000
